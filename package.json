@@ -11,5 +11,25 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "name": "nodejs-mysql-crud-api",
+  "version": "1.0.0",
+  "description": "The example API includes routes to create, retrieve, update and delete records in a MySQL database, the records in the example are user records but the same CRUD pattern and code structure could be applied to any type of data e.g. products, services, articles etc.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start:dev": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryoYohan/NodeJS-MySQL-CRUD-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CryoYohan/NodeJS-MySQL-CRUD-API/issues"
+  },
+  "homepage": "https://github.com/CryoYohan/NodeJS-MySQL-CRUD-API#readme"
 }
