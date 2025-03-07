@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Joi = require('joi');
-const validateRequest = require('_middleware/validate-request');
+const validateRequest = require('_middlewares/validate-request');
 const Role = require('_helpers/role');
 const userService = require('users/user.service');
 

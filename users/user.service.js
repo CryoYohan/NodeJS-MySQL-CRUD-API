@@ -2,13 +2,17 @@ const bcrypt = require('bcryptjs');
 const db = require('_helpers/db');
 
 module.exports = {
-    authenticate,
     getAll,
     getById,
     create,
     update,
     delete: _delete
 };
+
+async function _delete(id) {
+    const user = await getUser(id);
+    await user.destroy();
+}
 
 async function getAll() {
     return await db.User.findAll();
